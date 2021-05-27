@@ -1,0 +1,249 @@
+.row{
+  padding: 10px;
+}
+.img-fluid{
+  top: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgb(230, 81, 36);
+}
+.site-header{
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(230, 200, 36);
+  z-index:1;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  list-style-type: none;
+}
+.nav__item a{
+  
+  text-decoration:none;
+  color: black;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 75px;
+}
+.site-header__start{
+  display: flex;
+  align-items: center;
+}
+.site-header__end {
+  display: flex;
+  align-items: center; 
+}
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.box-content{
+  background-color: #ffffff;
+  width: 300px;
+  height: 100%
+}
+.gambar-content img{
+  width:100%
+}
+.line{
+  height: 2px;
+  width: 300px;
+  margin-top: 5px;
+  background-color: rgb(230, 200, 36);
+}
+.text-content{
+  margin: -5px 0;
+  text-align: center;
+}
+.text-content2{
+  margin: 5px 0;
+  top: 0;
+  text-align: center;
+}
+
+@media (min-width: 800px) 
+{
+  .site-header__wrapper 
+  {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 800px) 
+{
+  .nav__wrapper 
+  {
+    display: flex; 
+  }
+}
+@media (max-width: 799px) 
+{
+.nav__wrapper 
+{
+  position: absolute;
+  top: calc(100% + 35px);
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #d9f0f7;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+}
+  .nav__wrapper.active 
+  {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav__item:not(:last-child)
+{
+  margin-right: 0.5rem;
+}
+.nav__item a {
+  display: block;
+  padding: 1rem;
+  border-left: 4px solid transparent; 
+}
+.nav__item a:hover
+  {
+  margin: 0;
+  background-color: white;
+  color: black;
+  }
+@media (min-width: 800px) 
+{
+  .nav__item a 
+  {
+    text-align: center;
+    border-left: 0;
+    border-bottom: 4px solid transparent; } }
+  .nav__item svg 
+  {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    margin-right: 1rem; 
+  }
+@media (min-width: 800px)
+{
+  .nav__item svg
+  {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+}
+  .nav__item.active a 
+  {
+    border-left-color: #222; }
+@media (min-width: 800px) 
+{
+  .nav__item.active a 
+  {
+    border-bottom-color: #222; } }
+.nav__toggle 
+{
+display: none;
+}
+@media (max-width: 799px) {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem; 
+  }
+}
+
+/**
+.topnav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(235, 206, 46);
+    padding-left: 40px;
+  }
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+.navbar-logo{
+  float: left;
+}
+.logo-image{
+  float: left;
+}
+img{
+  top: 0;
+  left: 0;
+  position: fixed;
+  margin: auto;
+  width: 70px;
+  height: 50px;
+}
+**/
+
+/* Tab menu styling*/
+
+
+input.tab-menu-radio {
+  display: none;
+  }
+  label.tab-menu {
+  margin-top: 100px;
+  display: inline-block;
+  padding:10px 30px;
+  cursor: pointer;
+  z-index: 99;
+  }
+  /* End Tab menu styling*//* Tab content styling*/
+  .tab-content {
+  top:-3px;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding:20px;
+  background-color: #f7f7f7;
+  }
+  /* End Tab content styling*//* CSS tab core */
+  .tab-menu-radio:checked + label {
+  -webkit-transition:all 1s; /* Optional */
+  -moz-transition:all 1s; /* Optional */
+  transition:all 1s; /* Optional */
+  background-color: rgb(23, 61, 167);
+  color: #fff;
+  }
+  .tab-content .tab {
+  height: 0;
+  opacity: 0;
+  }
+  #tab-menu1:checked ~ .tab-content .tab-1,
+  #tab-menu2:checked ~ .tab-content .tab-2,
+  #tab-menu3:checked ~ .tab-content .tab-3 {
+  -webkit-transition:opacity 1s; /* Optional */
+  -moz-transition:opacity 1s; /* Optional */
+  transition:opacity 1s; /* Optional */
+  height: auto;
+  opacity: 1;
+  }
+  /* End CSS tab core */
