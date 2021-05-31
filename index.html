@@ -5,16 +5,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FXMedia</title>
+	<title>Singapore Swimming Club</title>
 	<link href="css/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/bootstrap.css">
+ 
+  <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.theme.default.min.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 
 <body>
   <header class="site-header">
     <div class="wrapper site-header__wrapper d-flex justify-content-center">
-      <ul class="nav__wrapper">
+      <ul class="nav__wrapper topper">
+        <li class="nav__item"><img src="img/logo.JPG" width="60px" height="60px" alt="">
+        </li>
         <li class="nav__item"><a href="#about-us">About Us</a>
         </li>
         <li class="nav__item"><a href="#club-buzz">Club Buzz</a>
@@ -41,111 +50,279 @@
       </nav>
     </div>
   </header>
-
-  <div class="container-fluid" style="margin-top:100px">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="box-content">
-          <div class="gambar-content">
-            <img src="img/swimming_pool.JPG" alt="">
+  <div class="owl-carousel owl-theme" style="margin-top: 0;">
+    <div> 
+      <img src="img/home-1.PNG" alt="">
+      <div class="carousel-caption d-none d-md-block text-left">
+        <h1>THE PREMIERE FAMILY CLUB</h1>
+        <p><h4>Where People Make Difference</h4></p>
+      </div>  
+    </div>
+    <div> 
+      <img src="img/home-2.PNG" alt="">  
+      <div class="carousel-caption d-none d-md-block text-left">
+        <h1>THE PREMIERE FAMILY CLUB</h1>
+        <p><h4>Where People Make Difference</h4></p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-featured" role="tab" aria-controls="pills-home" aria-selected="true">Featured</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-event" role="tab" aria-controls="pills-profile" aria-selected="false">Event</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-publication" role="tab" aria-controls="pills-profile" aria-selected="false">Publication</a>
+      </li>
+    </ul>
+  </div>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/swimming_pool.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>SALE OF ORDINARY MEMBERSHIP AT THE CLUB</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                <p>Purchase of membership directly from the club</p>
+              </div>
+            </div>
           </div>
-          <div class="text-content">
-            <p>SALE OF ORDINARY MEMBERSHIP AT THE CLUB</p>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/social_dance.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>SOCIAL DANCE NIGHT BLACK & WHITE NIGHT</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                <p>Come out and dance to a live band and have the time of your life.</p>
+              </div>
+            </div>
           </div>
-          <div class="line"></div>
-          <div class="text-content2">
-            <p>Purchase of membership directly from the club</p>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/swimming.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>21ST SSC OPEN INVITATIONAL MIDGET MEET 2015</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">            
+                  12 & 13 SEPTEMBER <br>
+                  Venue: Competition Pool            
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/billyard.JPG" style="margin-bottom: 10px;" alt="">
+              </div>
+              <div class="text-content">
+                <p>ANNUAL 9-BALL POOL</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                Time: 7pm (weekdays) <br>
+                Venue: Billiards Room (Bowling Centre)
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box-content">
-          <div class="gambar-content">
-            <img src="img/social_dance.JPG" alt="">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/tennis.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>22ND TABLE TENNIS OPEN CHAMPIONSHIP</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                Men's Singles / Doubles <br>Ladies' Singles / Doubles <br> Mixed Doubles
+              </div>
+            </div>
           </div>
-          <div class="text-content">
-            <p>SOCIAL DANCE NIGHT BLACK & WHITE NIGHT</p>
-          </div>
-          <div class="line"></div>
-          <div class="text-content2">
-            <p>Come out and dance to a live band and have the time of your life.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box-content">
-          <div class="gambar-content">
-            <img src="img/swimming.JPG" alt="">
-          </div>
-          <div class="text-content">
-            <p>21ST SSC OPEN INVITATIONAL MIDGET MEET 2015</p>
-          </div>
-          <div class="line"></div>
-          <div class="text-content2">
-            <ul>
-              <li>12 & 13 SEPTEMBER</li>
-              <li>Venue: Competition Pool</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box-content">
-          <div class="gambar-content">
-            <img src="img/billyard.JPG" alt="">
-          </div>
-          <div class="text-content">
-            <p>ANNUAL 9-BALL POOL</p>
-          </div>
-          <div class="line"></div>
-          <div class="text-content2">
-            <ul>
-              <li>Time: 7pm (weekdays)</li>
-              <li>Venue: Billiards Room (Bowling Centre)</li>
-            </ul>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/weekend_bazaar.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>WEEKEND BAZAAR EVERY SATURDAY</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                Time: 10am to 10pm <br>
+                  Venue: The Atrium            
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="box-content">
-          <div class="gambar-content">
-            <img src="img/tennis.JPG" alt="">
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/swimming_pool.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>SALE OF ORDINARY MEMBERSHIP AT THE CLUB</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                <p>Purchase of membership directly from the club</p>
+              </div>
+            </div>
           </div>
-          <div class="text-content">
-            <p>22ND TABLE TENNIS OPEN CHAMPIONSHIP</p>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/social_dance.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>SOCIAL DANCE NIGHT BLACK & WHITE NIGHT</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                <p>Come out and dance to a live band and have the time of your life.</p>
+              </div>
+            </div>
           </div>
-          <div class="line"></div>
-          <div class="text-content2">
-            <ul>
-              <li>Men's Singles / Doubles</li>
-              <li>Ladies' Singles / Doubles</li>
-              <li>Mixed Doubles</li>
-            </ul>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/swimming.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>21ST SSC OPEN INVITATIONAL MIDGET MEET 2015</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">            
+                  12 & 13 SEPTEMBER <br>
+                  Venue: Competition Pool            
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/billyard.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>ANNUAL 9-BALL POOL</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                Time: 7pm (weekdays) <br>
+                Venue: Billiards Room (Bowling Centre)
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box-content">
-          <div class="gambar-content">
-            <img src="img/weekend_bazaar.JPG" alt="">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/tennis.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>22ND TABLE TENNIS OPEN CHAMPIONSHIP</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                Men's Singles / Doubles <br>Ladies' Singles / Doubles <br> Mixed Doubles
+              </div>
+            </div>
           </div>
-          <div class="text-content">
-            <p>WEEKEND BAZAAR EVERY SATURDAY</p>
-          </div>
-          <div class="line"></div>
-          <div class="text-content2">
-            <ul>
-              <li>Time: 10am to 10pm</li>
-              <li>Venue: The Atrium</li>
-            </ul>
+          <div class="col-md-3 col-sm-6">
+            <div class="box-content">
+              <div class="gambar-content">
+                <img src="img/weekend_bazaar.JPG" alt="">
+              </div>
+              <div class="text-content">
+                <p>WEEKEND BAZAAR EVERY SATURDAY</p>
+              </div>
+              <div class="line"></div>
+              <div class="text-content2">
+                Time: 10am to 10pm <br>
+                  Venue: The Atrium            
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</body>
+<div class="container">
+  <div>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li>
+          <nav class="navbar navbar-light" style="background-color: rgb(52, 109, 146);">
+            <span class="navbar-text" style="color:#ffff;">
+              <h5>Upcoming News</h5>
+            </span>
+          </nav>
+        </li>
+        <li>
+          <nav class="navbar navbar-light" style="background-color: #ffff;">
+            <span class="navbar-text" style="color: black;">
+              SALE OF ORDINARY MEMBERSHIP AT THE CLUB
+            </span>
+          </nav>
+        </li>
+      </ul>
+  </div>
+
+<div class="row mb-2 pb-4">
+  <div class="col-md-6">
+    <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative auw">
+      <div class="col p-4 d-flex flex-column position-static">
+        <h3 class="mb-0">THE PALMS OPEN FOR BREAKFAST</h3>
+        <div class="mb-1 text-muted">15 SEPTEMBER 2015</div>
+        <p class="card-text mb-auto">Please be informed that due to the haze, breakfast will be served at
+          The Palms from <b>8.00am to 10.45am.</b> Members are to observe the dress code required at The Palms.
+        </p><br>
+        Dress Code at The Palms <br>
+        <p>Soiled or wet clothing and swimwear are not allowed</p><br>        
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row no-gutters overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative auw">
+      <div class="col p-4 d-flex flex-column position-static">
+        <h3 class="mb-0">PRO SHOP OPERATION HOURS</h3>
+        <div class="mb-1 text-muted">10 SEPTEMBER 2015</div>
+        <p class="mb-auto">Please be informed of the Pro Shop's new operating hours</p><br>
+        Monday - Wednesday & Friday : 3pm-8pm<br>
+        Saturday & Sunday : 12pm - 8pm<br>
+        Thursday: CLOSED<br>        
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 text-center">
+    <a href="#">+ Read More</a>
+  </div>
+</div>
+</div>
 <footer class="bg-light text-center text-lg-start" style="background-color: rgba(240, 211, 49, 0.897) !important;">
 	<!-- Grid container -->
 	<div class="container-fluid p-4">
@@ -156,18 +333,38 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="footer-logo">
-							<img src="img/logo.JPG" alt="" width="100" height="100">
+							<img src="img/logo2.PNG" alt="" width="100" height="100" style="padding-right: 5px;">
 						</div>
 						<div>
-							<ul>
-								<li>45 Tanjong Rhu Road</li>
-								<li>Singapore 436899</li>
-								<li>Tel: (65) 6342 3600</li>
-								<li>Fax : (65) 5344 4476</li>
-							</ul>
+								45 Tanjong Rhu Road <br>
+								Singapore 436899 <br>
+								Tel: (65) 6342 3600 <br>
+								Fax : (65) 5344 4476 <br>					
 						</div>
 					</div>
-				</div>
+
+        <div>
+          <div>
+            <!--Google map-->
+              <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 40px; margin-bottom: 10px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.18483467276!2d103.8814521!3d1.2969389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x592f2a9de95da38e!2sSingapore%20Swimming%20Club!5e0!3m2!1sid!2sid!4v1622166070620!5m2!1sid!2sid" frameborder="0"
+                  style="border:0"></iframe>
+              </div>
+            <!--Google Maps-->
+          </div>
+
+          <form>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+              </div>
+            </form>
+				  </div>
+          <div>
+            <button type="button" class="btn btn-primary btn-md btn-block">SUBMIT</button>
+          </div>
+        </div>
+
+        
 			</div>
 			<!--Grid column-->
 			<!--Grid column-->
@@ -235,6 +432,19 @@
 	</div>
 	<!-- Copyright -->
 </footer>
+<script>
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:false
+          }          
+      }
+  })
+</script>
 </body>
 
 </html>
